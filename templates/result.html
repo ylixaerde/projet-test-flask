@@ -1,10 +1,6 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Résultat</title>
-</head>
-<body>
-	<h1>Résultat</h1>
+{% extends 'base.html' %}
+
+{% block content %}
+	<h1>{% block title %}Résultat{% endblock %}</h1>
 	<p>L'adresse e-mail encodée est : {{ email }}</p>
-</body>
-</html>
+{% endblock %}
